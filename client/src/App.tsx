@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { LoginPage } from "./pages";
 import { PATHS } from "./router/paths";
-import { EmployeesPage } from "./pages";
+import { EmployeesPage, CandidatesPage } from "./pages";
 import PrivateRoute from "./router/PrivateRoute";
 import ReverseAuthRoute from "./router/ReverseAuthRoute";
 

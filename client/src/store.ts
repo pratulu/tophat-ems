@@ -2,11 +2,13 @@ import { configureStore } from "@reduxjs/toolkit";
 import CounterReducer from "./slices/counter/CounterSlice";
 import AppReducer from "./slices/app/AppSlice";
 import EmployeeReducer from "./slices/app/EmployeeSlice";
+import CandidatesReducer from "./slices/app/CandidateSlice";
 
 export const store = configureStore({
   reducer: {
     app: AppReducer,
     employees: EmployeeReducer,
+    candidates: CandidatesReducer,
     counter: CounterReducer,
   },
 });
