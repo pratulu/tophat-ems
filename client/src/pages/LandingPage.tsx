@@ -1,8 +1,8 @@
-import React from "react";
+import React, { FC } from "react";
 
 type Props = {};
 
-const LandingPage = (props: Props) => {
+const LandingPage: FC = (props: Props) => {
   return <div>LandingPage</div>;
 };
 

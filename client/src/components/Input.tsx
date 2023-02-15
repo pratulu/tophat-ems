@@ -1,8 +1,10 @@
-import React, { FC } from "react";
+import { FC } from "react";
 
-type Props = {};
+type Props = {
+  type?: string;
+};
 
-const Input: FC = (props: Props) => {
+const Input = (props: Props) => {
   return <div>Input</div>;
 };
 

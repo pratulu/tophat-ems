@@ -17,8 +17,8 @@ const addUser = async (req, res) => {
   const userExists = await Users.findOne({ userId });
   if (userExists)
     return res.status(201).json({ message: "User Already Exists" });
-  const salt = bcrypt.genSalt(10);
-  const hashedPassword = bcrypt.hash(password, salt);
+  const salt = await bcrypt.genSalt(10);
+  const hashedPassword = await bcrypt.hash(password, salt);
 
   const newUser = new Users({ userId, role, password: hashedPassword });
   const savedUser = await newUser.save();

@@ -15,4 +15,5 @@ export const PATHS = {
   devErrorPage: "/dashboard/error-dev-dashboard",
   employeesDashboard: "/dashboard/employee-dashboard",
   candidateDashbnoard: "/dashboard/candidate-dashboard",
+  superAdminPage: "/super-admin-dashboard",
 };

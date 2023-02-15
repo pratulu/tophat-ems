@@ -7,7 +7,7 @@ const loginRoute = require("./routes/login");
 const userRoute = require("./routes/user");
 const employeeRoute = require("./routes/employee");
 const candidateRoute = require("./routes/candidate");
-
+const attendanceRoute = require("./routes/attendance");
 // Connect to MongoDB
 mongoose
   .connect(process.env.DB_URL)
@@ -39,6 +39,7 @@ app.use("/api/auth", loginRoute);
 app.use("/api", userRoute);
 app.use("/api", employeeRoute);
 app.use("/api", candidateRoute);
+app.use("/api", attendanceRoute);
 
 // Start server
 const PORT = process.env.PORT || 3000;

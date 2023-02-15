@@ -17,7 +17,7 @@ router.put(
 );
 
 router.delete(
-  "/delerte-candidate/:id",
+  "/delete-candidate/:id",
   verifyToken,
   candidateController.deleteCandidate
 );

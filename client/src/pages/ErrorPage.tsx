@@ -1,8 +1,8 @@
-import React from "react";
+import React, { FC } from "react";
 
 type Props = {};
 
-const ErrorPage = (props: Props) => {
+const ErrorPage: FC = (props: Props) => {
   return <div>ErrorPage</div>;
 };
 

@@ -16,6 +16,7 @@ const UserSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    // TODO: Check for disabling the user if when employee is deleted
   },
   {
     timestamps: true,

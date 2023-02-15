@@ -3,7 +3,11 @@ import React, { FC } from "react";
 type Props = {};
 
 const Radio: FC = (props: Props) => {
-  return <div>Radio</div>;
+  return (
+    <>
+      <input type="radio" className="radio-info" name="" id="" />
+    </>
+  );
 };
 
 export default Radio;

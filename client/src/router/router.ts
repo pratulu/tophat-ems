@@ -1,3 +1,4 @@
+import { IRoute } from "./../interfaces/index";
 import { PATHS } from "./paths";
 import {
   CandidatesPage,
@@ -8,9 +9,11 @@ import {
   LoginPage,
   RegisterPage,
   ReportsPage,
-} from "../pages/";
+} from "../pages";
+import SuperAdminPage from "../pages/SuperAdminPage";
 
-export const authRoutes = [
+// * auth routes
+export const authRoutes: IRoute[] = [
   {
     key: PATHS.dashboard,
     path: PATHS.dashboard,
@@ -20,6 +23,11 @@ export const authRoutes = [
     key: PATHS.employees,
     path: PATHS.employees,
     Element: EmployeesPage,
+  },
+  {
+    key: PATHS.superAdminPage,
+    path: PATHS.superAdminPage,
+    Element: SuperAdminPage,
   },
   {
     key: PATHS.candidates,
@@ -38,6 +46,7 @@ export const authRoutes = [
   },
 ];
 
+// * public routes
 export const routes = [
   {
     key: PATHS.root,
@@ -55,3 +64,4 @@ export const routes = [
     Element: RegisterPage,
   },
 ];
+

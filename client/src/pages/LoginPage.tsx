@@ -3,13 +3,14 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
-import { useState } from "react";
+import { FC, useState } from "react";
 import { useNavigate, NavLink } from "react-router-dom";
 import { PATHS } from "../router/paths";
 import axios from "axios";
 import { BE_CONNECTION_STRING } from "../constants";
 import { useDispatch } from "react-redux";
 import { setToken } from "../slices/app/AppSlice";
+//import SuperAdminPage from "./SuperAdminPage";
 type Props = {};
 interface loginPayload {
   userId: string;
@@ -17,7 +18,7 @@ interface loginPayload {
 }
 
 // login page
-const LoginPage = (props: Props) => {
+const LoginPage: FC = (props: Props) => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
@@ -49,7 +50,7 @@ const LoginPage = (props: Props) => {
     const token = response.data.token;
     dispatch(setToken(token));
     localStorage.setItem("token", token);
-    navigate(PATHS.employees);
+    navigate(PATHS.superAdminPage);
   };
 
   return (
@@ -71,6 +72,7 @@ const LoginPage = (props: Props) => {
               type="text"
               name="userId"
               id="userId"
+              defaultValue={"0115e5609d81"}
             />
             <span className="text-customRed1">{errors.userId?.message}</span>
           </div>
@@ -93,6 +95,7 @@ const LoginPage = (props: Props) => {
               type={!togglePassword ? "password" : "text"}
               name="password"
               id="password"
+              defaultValue={"Vis057adev"}
             />
             <div>
               {togglePassword ? (

@@ -91,6 +91,7 @@ const editEmployee = async (req, res) => {
 };
 
 const deleteEmployee = async (req, res) => {
+  // TODO: Disable User
   try {
     const employeeId = req.params.id;
     const employeeExists = await Employees.findById(employeeId);

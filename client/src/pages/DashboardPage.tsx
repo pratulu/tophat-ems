@@ -1,8 +1,8 @@
-import React from "react";
+import React, { FC } from "react";
 
 type Props = {};
 
-const DashboardPage = (props: Props) => {
+const DashboardPage: FC = (props: Props) => {
   // to be routed to when logged in
   return <div>DashboardPage</div>;
 };

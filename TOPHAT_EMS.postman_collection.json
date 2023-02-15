@@ -1,0 +1,331 @@
+{
+	"info": {
+		"_postman_id": "2f3845c8-ff4b-4c27-81d3-509a0536be8d",
+		"name": "TOPHAT_EMS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15351032"
+	},
+	"item": [
+		{
+			"name": "GET ALL USERS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VJZCI6IjAxMTVlNTYwOWQ4MSIsInJvbGUiOiJkZXYiLCJpYXQiOjE2NzU5MzMzMDEsImV4cCI6MTY3NjAxOTcwMX0.PhjLg_t3QqtlQ9dNsh2A4f_oNbNlBInBYuH3V_Jhd4I",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": \"1231912df2190\",\n    \"password\": \"230wjdsioc\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/all-users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"all-users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADD USER",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VJZCI6IjAxMTVlNTYwOWQ4MSIsInJvbGUiOiJkZXYiLCJpYXQiOjE2NzU5MzM2MTQsImV4cCI6MTY3NjAyMDAxNH0.Lpq7vCnfa-utd-a2hqVZtZ8cM9_1yzifYgMsSySDAeI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": \"userId3\",\n    \"role\": \"hr\",\n    \"password\": \"Qwerty@123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/add-user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"add-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LOGIN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": \"0115e5609d81\",\n    \"password\": \"Vis057adev\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE USER",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "token",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/delete-user/63e20f2b4b75da274a703955",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"delete-user",
+						"63e20f2b4b75da274a703955"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL EMPLOYEES",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VJZCI6IjAxMTVlNTYwOWQ4MSIsInJvbGUiOiJkZXYiLCJpYXQiOjE2NzU5MzM2MTQsImV4cCI6MTY3NjAyMDAxNH0.Lpq7vCnfa-utd-a2hqVZtZ8cM9_1yzifYgMsSySDAeI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/all-employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"all-employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADD EMPLOYEE",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VJZCI6InVzZXJJZDEiLCJyb2xlIjoiaHIiLCJpYXQiOjE2NzU4NjA2MTYsImV4cCI6MTY3NTk0NzAxNn0.j0uqD0mPi_HOzF0-EQyhNZmMRd0myUhVOk6kfq_sLgI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"Vishesh\",\n    \"lastName\": \"Bajpayee\",\n    \"primaryContactNumber\": \"10231231231\",\n    \"secondaryContactNumber\": \"0123123111\",\n    \"primaryAddress\": \"Vijay Nagar0\",\n    \"secondaryAddress\": \"VJ,Indore\",\n    \"officialEmail\": \"test1@gmail.com\",\n    \"personalEmail\": \"personalEmail@gmai0l.com\",\n    \"dateOfBirth\": \"22-10-1999\",\n    \"department\": \"dev\",\n    \"designation\": \"React Developer\",\n    \"experience\": \"3\",\n    \"dateOfJoining\": \"22-10-2023\",\n    \"role\": \"dev\",\n    \"permissions\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/add-employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"add-employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EDIT EMPLOYEE",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VJZCI6IjAxMTVlNTYwOWQ4MSIsInJvbGUiOiJkZXYiLCJpYXQiOjE2NzU5MjMwNzEsImV4cCI6MTY3NjAwOTQ3MX0.exyT34TY1juPDDQq5f1PLv-cOS0ITo6UO6gpyD6fpYI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n            \"_id\": \"63e48dd2d0e4ac769a855e42\",\n            \"firstName\": \"Visheshhhh\",\n            \"lastName\": \"Bajpayeeeee\",\n            \"primaryContactNumber\": \"10231231231\",\n            \"secondaryContactNumber\": \"0123123111\",\n            \"primaryAddress\": \"Vijay Nagar0\",\n            \"secondaryAddress\": \"VJ,Indore\",\n            \"officialEmail\": \"test1@gmail.com\",\n            \"personalEmail\": \"personalEmail@gmai0l.com\",\n            \"dateOfBirth\": \"22-10-1999\",\n            \"designation\": \"React Developer\",\n            \"department\": \"dev\",\n            \"experience\": \"3\",\n            \"dateOfJoining\": \"22-10-2023\",\n            \"documents\": [],\n            \"role\": \"dev\",\n            \"permissions\": true,\n            \"createdAt\": \"2023-02-09T06:08:18.306Z\",\n            \"updatedAt\": \"2023-02-09T06:08:18.306Z\",\n            \"__v\": 0\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/edit-employee/63e48dd2d0e4ac769a855e42",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"edit-employee",
+						"63e48dd2d0e4ac769a855e42"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE EMPLOYEE",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VJZCI6IjAxMTVlNTYwOWQ4MSIsInJvbGUiOiJkZXYiLCJpYXQiOjE2NzU5MjMwNzEsImV4cCI6MTY3NjAwOTQ3MX0.exyT34TY1juPDDQq5f1PLv-cOS0ITo6UO6gpyD6fpYI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/delete-employee/63e48dd2d0e4ac769a855e42",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"delete-employee",
+						"63e48dd2d0e4ac769a855e42"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL CANDIDATES",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VJZCI6IjAxMTVlNTYwOWQ4MSIsInJvbGUiOiJkZXYiLCJpYXQiOjE2NzU5MzI3ODksImV4cCI6MTY3NjAxOTE4OX0.WmMjUD8HyHRTchBgLqhEPXdboQsQy1-ok7sAsCViubA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/get-all-candidates?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VJZCI6IjAxMTVlNTYwOWQ4MSIsInJvbGUiOiJkZXYiLCJpYXQiOjE2NzU5MzM2MTQsImV4cCI6MTY3NjAyMDAxNH0.Lpq7vCnfa-utd-a2hqVZtZ8cM9_1yzifYgMsSySDAeI",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"get-all-candidates"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VJZCI6IjAxMTVlNTYwOWQ4MSIsInJvbGUiOiJkZXYiLCJpYXQiOjE2NzU5MzM2MTQsImV4cCI6MTY3NjAyMDAxNH0.Lpq7vCnfa-utd-a2hqVZtZ8cM9_1yzifYgMsSySDAeI"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADD CANDIDATES",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VJZCI6IjAxMTVlNTYwOWQ4MSIsInJvbGUiOiJkZXYiLCJpYXQiOjE2NzU5MzMzMDEsImV4cCI6MTY3NjAxOTcwMX0.PhjLg_t3QqtlQ9dNsh2A4f_oNbNlBInBYuH3V_Jhd4I",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"candidate1\",\n    \"lastName\": \"candidate1LastName\",\n    \"personalEmail\": \"candidate@email.com\",\n    \"primaryContactNumber\": \"1231231231\",\n    \"currentLocation\": \"location1\",\n    \"baseLocation\": \"baseLocation1\",\n    \"readyToRelocate\": false,\n    \"noticePeriod\": \"0\",\n    \"currentCTC\": \"5LPA\",\n    \"expectedCTC\": \"6LPA\",\n    \"communication\": \"dev\",\n    \"technology\": \"react\",\n    \"experience\": \"3Years\",\n    \"hrInCharge\": \"63e2083df6a17727cab3c84a\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/add-candidate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"add-candidate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

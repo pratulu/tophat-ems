@@ -19,7 +19,6 @@ export interface IEmployees {
   _updatedAt: Date;
   _createdAt: Date;
 }
-
 export interface ICandidates {
   _id: string;
   firstName: string;
@@ -48,4 +47,18 @@ export interface IUsers {
   role: string;
   _updatedAt: Date;
   _createdAt: Date;
+}
+
+export interface IRoute {
+  key?: string;
+  path?: string;
+  Element: React.FC;
+}
+
+export interface IAttendance {
+  _id?: string;
+  employeeId: string;
+  date: string;
+  status: string;
+  notes?: string;
 }
